@@ -1,0 +1,20 @@
+interface A{
+  void print();
+}
+
+interface B{
+  void print();
+}
+
+class c implements A,B{
+  public void print(){
+  System.out.print("Welcome to mitrc");
+  }
+}
+
+class interfacee{
+  public static void main(String[] args){
+  c obj = new c();
+    obj.print();
+  }
+} 

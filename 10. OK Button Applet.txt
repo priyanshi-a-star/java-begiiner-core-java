@@ -1,0 +1,53 @@
+//import packages
+import java.awt.event.*;  
+import javax.swing.*;    
+
+public class jbuttonproj 
+{  
+	//main decleration
+	public static void main(String[] args) 
+	{  
+		//Decleration of Frame 
+		JFrame jf = new JFrame("My Button");  
+		
+		//Decleration of Label
+		JLabel jl = new JLabel();  
+		
+		//Set Size and Co-ordinates of Label		
+		jl.setBounds(50,50, 150, 30);  //(x,y,w,h)
+		
+		//Decleration of Button
+		JButton bn = new JButton("Ok");  
+		
+		//Set Size and co-ordinates of Button
+		bn.setBounds(100,100,120,50);  //(x,y,w,h)
+		
+		//What Button shows after click
+		bn.addActionListener(new ActionListener()
+		{  
+			public void actionPerformed(ActionEvent e)
+			{  
+				//Set and Show Text in Label
+				jl.setText("Successful");  
+			}  
+		});  
+		
+		//Add Button on Frame
+		jf.add(bn);
+		
+		//Add Label on Frame
+		jf.add(jl);  
+		
+		//set size of Frame
+		jf.setSize(500, 300);  //(w,h)
+		
+		//Clear Grabaze from Frame
+		jf.setLayout(null);  
+		
+		//It sets visibility of Frame
+		jf.setVisible(true);   
+		
+		//it terninates application on exit
+		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //use it to close view
+	}  
+}

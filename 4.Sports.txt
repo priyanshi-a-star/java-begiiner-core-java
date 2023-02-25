@@ -1,0 +1,79 @@
+import java.util.*;
+class player
+{
+ String name;
+ int age;
+ player(String n,int a)
+ {
+  name=n;
+  age=a;
+ }
+ 
+ public void show()
+ {
+  System.out.println("Name of the player:" +name);
+  System.out.println("Age of player: " +age);
+ }
+
+}
+
+class cricket_player extends player
+ {
+  String type;
+  cricket_player(String n,int a,String b)
+  {
+   super(n,a);
+   type=b;
+  }
+
+ public void show()
+ {
+  super.show();
+  System.out.println("Type of game: " +type);
+ }
+}
+
+class football_player extends player
+ {
+  String type;
+  football_player(String n,int a,String b)
+  {
+   super(n,a);
+   type=b;
+  }
+ 
+  public void show()
+  {
+   super.show();
+   System.out.println("Type of game : " +type);
+  }
+}
+
+class hockey_player extends player
+ {
+  String type;
+  hockey_player(String n,int a,String b)
+  {
+   super(n,a);
+   type=b;
+  }
+ 
+  public void show()
+  {
+   super.show();
+   System.out.println("Type of game : " +type);
+  }
+}
+
+class Sports
+{
+ public static void main(String arg[])
+ {
+  cricket_player a = new cricket_player("Harsh",25,"Cricket");
+  football_player b = new football_player("Harsh",24,"Football");
+  hockey_player c = new hockey_player("Harsh",23,"Hockey");
+  a.show();
+  b.show();
+  c.show();
+ }
+}

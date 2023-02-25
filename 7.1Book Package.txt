@@ -1,0 +1,66 @@
+package BookDetails;
+public class Book1
+{
+   public String title;
+   public String author;
+   public int year;
+   public String publisher;
+   public int price;
+   public Book1( String title,String author,int year,String publisher,int price)
+   {
+     this.title=title;
+     this.author=author;
+     this.year=year;
+     this.publisher=publisher;
+     this.price=price;
+   }
+ public void gettitle()
+ {
+ System.out.println("Title of Book:"+title);
+ }
+  public void getauthor()
+ {
+ System.out.println("Author of Book:"+author);
+ }
+ public void getyear()
+ {
+ System.out.println("Year of Book:"+year);
+ }
+ public void getpublisher()
+ {
+ System.out.println("Publisher of Book:"+publisher);
+ }
+ public void getprice()
+ {
+ System.out.println("Price of Book:"+price);
+ }
+ public void settitle(string title)
+ {
+ this.title=title;
+ }
+ public void setauthor(string author)
+ {
+ this.author=author;
+ }
+ public void setyear(int year)
+ {
+ this.year=year;
+ }
+ public void setpublisher(string publisher)
+ {
+ this.publisher=publisher;
+ }
+ public void setprice(int price)
+ {
+ this.price=price;
+ }
+ public void show()
+ {
+  gettitle();
+  getauthor();
+  getyear();
+  getpublisher();
+  getprice();
+ }
+}
+ 

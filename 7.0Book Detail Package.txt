@@ -1,0 +1,9 @@
+import BookDetails.Book1;
+public class Book2{
+  public static void main(String[] args){
+   Book1 b1=new Book1("MachineLearning","Harry",2020,"MlLearn",500);
+   b1.show();
+     Book1 b2=new Book1("DeepLearning","Harry",2020,"DlLearn",500);
+    b2.show();
+  }
+}

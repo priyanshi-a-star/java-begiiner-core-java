@@ -1,0 +1,56 @@
+import java.util.*;
+class student1
+{
+int reg_no;
+String name;
+int marks[];
+int total;
+
+ public void input()
+ {
+  Scanner sc=new Scanner(System.in);
+  Scanner sc1 = new Scanner(System.in);
+  marks=new int[5];
+  System.out.println("Enter registration Number.");
+  reg_no=sc.nextInt();
+  System.out.println("Enter Name");
+  name=sc1.next();
+  for(int i=0;i<5;i++)
+  {
+   System.out.println("Enter marks ");
+   marks[i]=sc.nextInt();
+  }
+}
+
+public void total()
+{
+ for(int j=0;j<5;j++)
+ total=total+marks[j];
+}
+
+public void display()
+ {
+  System.out.println("Reg_No.\t:"+reg_no);
+  System.out.println("Name\t:"+name);
+  for(int k=0;k<5;k++)
+  System.out.println("\n Marks[k] \t " +marks[k]);
+  System.out.println("\n Total marks \t "+total);
+ }
+}
+class student
+{
+public static void main(String arg[])
+ {
+  student1 obj[]=new student1[5];
+  for(int i=0;i<5;i++)
+  obj[i]= new student1();  
+ for(int i=0;i<5;i++)
+  obj[i].input();
+  for(int i=0;i<5;i++)
+  obj[i].total();
+  for(int i=0;i<5;i++)
+  obj[i].display();
+ }
+}
+
+  
